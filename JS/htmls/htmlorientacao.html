@@ -2,9 +2,19 @@
 	<<head>
 		<meta charset="utf-8">
 		<title>teste Orientação a objetos</title>
-		<<script src="../orientacao.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="../orientacao.js" type="text/javascript" charset="utf-8" async defer></script>
 	</head>
-	<<body>
-		teste
+	<body>
+		<label>Nome:
+			<input type="texte" id="pessoa" name="pessoa" value="" placeholder="digite o nome de uma pessoa">
+		</label>
+
+		<button type="button" onclick="createPessoa()"> cria uma pessoa</button>
+		<button type="button" onclick="createTrabalhador()"> cria uma trabalhador</button>
+		
+		<button type="button" onclick="pessoa.walk()"> caminha </button>
+		<button type="button" onclick="pessoa.caller()"> falar </button>
+		<button type="button" onclick="pessoa.sentar()"> sentar </button>
+
 	</body>
 </html>

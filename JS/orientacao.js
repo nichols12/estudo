@@ -32,14 +32,13 @@ Trabalhador.prototype.caller = function(){
 Trabalhador.prototype.sentar = function(){
 	console.log('uffs finalmente descansei');
 }
+var pessoa
 
+//funções usadas para criar os objetos através do html 
+function createPessoa(){
+	pessoa = new Pessoa(document.getElementById('pessoa').value);
+}
 
-var trabalhador1 = new Trabalhador('Karina');
-
-trabalhador1.walk();
-
-//instacia o objeto Pessoa na váriavel pessoa1
-var pessoa1 = new Pessoa('Nicholas');
-//exevuta o metodo calller;
-pessoa1.caller();
-pessoa1.walk();
+function createTrabalhador(){
+	pessoa = new Trabalhador(document.getElementById('pessoa').value);
+}
